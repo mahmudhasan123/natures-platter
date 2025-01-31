@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/mobile-logo.png"
+      type="image/x-icon"
+    />
     <title>Nature's Platter</title>
     <!-- Google Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -34,13 +39,18 @@
         <!-- Nav for Desktop -->
         <nav class="hidden lg:flex justify-between items-center md:p-6">
           <div>
-            <img class="max-w-50" src="images/logo-header.png" alt="Logo" />
+            <img
+              class="cursor-pointer max-w-50"
+              src="images/logo-header.png"
+              alt="Logo"
+            />
           </div>
           <div>
             <ul class="flex font-normal text-xl gap-8">
               <li><a href="#">Product</a></li>
               <li><a href="#">Services</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
           <div class="flex gap-6 items-center">
@@ -89,7 +99,75 @@
         </section>
       </div>
     </header>
-    <main class="container mx-auto"></main>
+    <main class="container mx-auto p-4 lg:p-20">
+      <!-- Service Section -->
+      <section class="">
+        <h2 class="max-w-md font-semibold text-2xl text-green-500 py-8 lg:pt-0">
+          Services
+        </h2>
+        <div
+          class="flex flex-col lg:flex-row gap-5 lg:gap-10 justify-between items-center"
+        >
+          <!-- 24/7 -->
+          <div
+            class="p-8 text-center bg-gray-100 rounded-2xl shadow-md max-w-xl"
+          >
+            <div>
+              <img
+                class="max-w-150 mx-auto mb-6"
+                src="images/service.png"
+                alt="Support"
+              />
+            </div>
+            <h2 class="font-semibold text-xl lg:text-2xl mb-3">
+              24/7 Services
+            </h2>
+            <p class="font-light lg:text-xl opacity-75">
+              We offer 24/7 support to ensure you're never without assistance,
+              no matter the time or day.
+            </p>
+          </div>
+          <!-- Delivery -->
+          <div
+            class="p-8 text-center bg-gray-100 rounded-2xl shadow-md max-w-xl"
+          >
+            <div>
+              <img
+                class="max-w-150 mx-auto mb-6"
+                src="images/delivery.png"
+                alt="Delivery"
+              />
+            </div>
+            <h2 class="font-semibold text-xl lg:text-2xl mb-3">
+              Fast Delivery
+            </h2>
+            <p class="font-light lg:text-xl opacity-75">
+              Enjoy fast, reliable delivery services that get your orders to you
+              quickly and efficiently, every time.
+            </p>
+          </div>
+          <!-- Healthy -->
+          <div
+            class="p-8 text-center bg-gray-100 rounded-2xl shadow-md max-w-xl"
+          >
+            <div>
+              <img
+                class="max-w-150 mx-auto mb-6"
+                src="images/healthy.png"
+                alt="Healthy"
+              />
+            </div>
+            <h2 class="font-semibold text-xl lg:text-2xl mb-3">
+              Healthy Products
+            </h2>
+            <p class="font-light lg:text-xl opacity-75">
+              Discover our range of healthy products, carefully selected to
+              support your well-being and active lifestyle.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
