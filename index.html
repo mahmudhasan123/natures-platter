@@ -30,6 +30,16 @@
     <style type="text/tailwindcss">
       @theme {
         --font-display: "Sora", serif;
+        --animate-wiggle: wiggle 1s ease-in-out infinite;
+        @keyframes wiggle {
+          0%,
+          100% {
+            transform: rotate(-3deg);
+          }
+          50% {
+            transform: rotate(3deg);
+          }
+        }
       }
     </style>
   </head>
@@ -78,7 +88,9 @@
         <!-- Banner Section -->
         <section class="py-12 lg:py-20">
           <div class="max-w-sm lg:max-w-3xl mx-auto text-center">
-            <h2 class="text-4xl lg:text-5xl font-semibold mb-4 lg:mb-8">
+            <h2
+              class="text-4xl lg:text-5xl font-semibold mb-4 lg:mb-8 animate-wiggle"
+            >
               Freshness
               <span class="text-green-500"
                 >You Can<br />
@@ -93,7 +105,7 @@
               produce to pantry staples, we’ve got you covered every day!
             </p>
           </div>
-          <div class="mx-auto max-w-5xl">
+          <div class="mx-auto max-w-5xl hover:animate-pulse">
             <img class="w-full" src="images/hero-vegetables.png" alt="Banner" />
           </div>
         </section>
@@ -540,9 +552,9 @@
     </main>
     <footer class="bg-green-500 relative">
       <!-- Newsletter Section -->
-      <div class="hidden absolute -top-50">
+      <div class="absolute lg:-top-50 top-[-30%] left-[8%] lg:left-[15%]">
         <div
-          class="lg:flex lg:gap-36 bg-gray-100 rounded-lg lg:px-24 lg:py-12 px-4 py-8 lg:text-left text-center"
+          class="lg:flex lg:gap-36 w-120 lg:w-auto bg-gray-100 rounded-lg lg:px-24 lg:py-12 px-4 py-8 lg:text-left text-center"
         >
           <div>
             <img
@@ -551,7 +563,7 @@
               alt="Subscribe"
             />
           </div>
-          <div>
+          <div class="lg:self-center">
             <h2
               class="lg:text-black lg:text-4xl text-green-500 font-semibold text-2xl mb-3"
             >
@@ -577,7 +589,7 @@
       </div>
       <!-- Footer Section -->
       <div
-        class="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-12 px-4 pb-12 pt-70 lg:p-20 lg:pt-90 container mx-auto"
+        class="flex flex-col lg:flex-row lg:justify-between lg:items-end gap-12 px-4 pb-12 pt-80 lg:p-20 lg:pt-90 container mx-auto"
       >
         <div>
           <img
